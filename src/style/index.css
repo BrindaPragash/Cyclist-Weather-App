@@ -1,0 +1,48 @@
+@font-face {
+	font-family: "Open Sans"; 
+	src: local("OpenSansRegular"),
+	  url("../font/OpenSans-Regular.ttf") format("truetype");
+	font-weight: normal;
+  }
+
+@font-face {
+	font-family: "Open Sans"; 
+	src: local("OpenSansSemibold"),
+		url("../font/OpenSans-SemiBold.ttf") format("truetype");
+	font-weight: bold;
+}
+  
+  
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		color: #fff;
+		background: #1c1c1c;
+	}
+}
+
+body {
+	font-family: 'Open Sans';
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	background-color: black;
+}
+
+#app > main {
+	display: flex;
+	margin: 0 auto;
+	min-height: calc(100vh - 3.5rem);
+	flex-direction: column;
+}
+
+#app {
+	max-width: 450px;
+	background-color: #1c1b1f;
+}
+
+a {
+	text-decoration: none;
+}
+

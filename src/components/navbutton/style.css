@@ -1,0 +1,54 @@
+.button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 3em;
+    padding: 5px;
+    align-items: center;
+}
+
+.label {
+    color: #CAC4D0;
+    font-weight: bold;
+    font-size: 0.95em;
+}
+
+.icon {
+    width: 1em;
+    filter: brightness(0) saturate(100%) invert(84%) sepia(3%) saturate(688%) hue-rotate(227deg) brightness(93%) contrast(95%);
+    display: block;
+    margin: auto;
+}
+
+.active .label {
+    color: #E6E1E5;
+}
+
+.active .icon {
+    filter: brightness(0) saturate(100%) invert(80%) sepia(10%) saturate(433%) hue-rotate(217deg) brightness(111%) contrast(95%);
+}
+
+.active .iconbg {
+    background-color: #4A4458;
+    width: 100%;
+    border-radius: 1em;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    animation-duration: 0.2s;
+    animation-name: button-icon;
+}
+
+.iconbg {
+    padding: 5px;
+}
+
+@keyframes button-icon {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+

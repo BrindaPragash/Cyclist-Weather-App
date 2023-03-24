@@ -1,0 +1,35 @@
+.actions {
+    width: auto;
+    position: relative;
+    left: 300px;
+    top: 875px;
+    z-index: 10;
+}
+
+button {
+    background-color: rgb(43, 40, 49);
+    border-radius: 1em;
+    padding: 0.75em;
+    color: #E6E1E5;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    width: min-content;
+    gap: 10px;
+    transition: all 0.1s;
+    z-index: 5;
+    border: none;
+    cursor: pointer;
+    font: inherit;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: rgb(51, 47, 59);
+    color: #E7DDF9
+}
+
+.icon {
+    width: 1em;
+    filter: brightness(0) saturate(100%) invert(71%) sepia(68%) saturate(72%) hue-rotate(217deg) brightness(111%) contrast(95%);
+}
